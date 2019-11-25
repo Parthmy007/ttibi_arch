@@ -1,0 +1,19 @@
+<?php
+namespace {{namespace}};
+
+use App\Constants\SerConst;
+
+class Service
+{
+	public function execute ($params){
+		$data = $params['data'];
+		$ser_resp = SerConst::SER_RESP;
+		try{
+		// write your code 
+			
+		}catch(\Exception $e){
+			return response()->json($ser_resp);
+		}
+		return response()->json($ser_resp);
+	}	
+}

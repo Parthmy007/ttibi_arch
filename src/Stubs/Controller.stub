@@ -1,0 +1,16 @@
+<?php
+namespace {{namespace}};
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use {{service_namespace}}\Service;
+
+class {{name}} extends Controller
+{
+	public function service(Request $request){
+		$resp = "";
+        $service = new Service;
+        $resp = $service->execute($request->all());
+        return $resp;
+	}	
+}

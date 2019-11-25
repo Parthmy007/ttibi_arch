@@ -1,0 +1,11 @@
+$(document).ready(function(){
+	req_data = {"auth": {"accesskey": "TTIBI","signature": getCookie('jwt_token')},"data": {}};
+
+	// write your code in services
+	services = {
+		init: function(){
+			self = this;
+		}
+	};
+	services.init();
+});

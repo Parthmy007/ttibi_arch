@@ -1,0 +1,5 @@
+form_id = 'form_id';
+form_field_rules = {
+
+};
+validate_lib.applyValidation(form_id,form_field_rules);
